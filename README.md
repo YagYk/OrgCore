@@ -42,7 +42,7 @@ Environment variables (see `.env.example`):
    |-- admins (email, password_hash, org_id)
    |-- org_<name> (dynamic per org data)
 ```
-- Master DB stores metadata and admin credentials (bcrypt hashed).
+- Master Database stores metadata and admin credentials (bcrypt hashed).
 - JWT embeds `admin_id` and `org_id` for authorization.
 - Dynamic collection created per org; rename on org name change.
 - Indexes enforce unique org names and admin email per org.
